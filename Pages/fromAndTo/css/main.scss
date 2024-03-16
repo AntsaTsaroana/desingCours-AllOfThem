@@ -1,0 +1,32 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #2864FF;
+    font-weight: bold;
+    height: 100vh;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10rem;
+    text-align: center;
+    color: #5d8bff;
+    opacity: 1;
+}
+
+.progress {
+    background-color: #dde6ff;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}

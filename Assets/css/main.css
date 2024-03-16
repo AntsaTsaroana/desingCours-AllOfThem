@@ -1,0 +1,33 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    margin: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+    transition: 0.5s;
+    margin-bottom: 15px;
+}
+
+a:hover {
+    color: black;
+    letter-spacing: 2px;
+}
