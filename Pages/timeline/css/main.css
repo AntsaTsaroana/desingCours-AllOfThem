@@ -9,20 +9,26 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 1;
 }
 
 .fade-container {
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   height: 100vh;
 }
 
 .fade1, .fade2, .fade3 {
-  transform: scaleY(0);
-  transform-origin: top;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 .fade1 {
@@ -41,8 +47,10 @@ h1 {
   margin: 0;
   font-size: 8rem;
   font-weight: 900;
-  font-family: "Inter", sans-serif;
-  letter-spacing: -0.08em;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -.08em;
   z-index: 1;
-  transform: translateX(-100%);
-}/*# sourceMappingURL=main.css.map */
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+/*# sourceMappingURL=main.css.map */

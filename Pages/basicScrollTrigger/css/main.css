@@ -2,12 +2,13 @@ body {
   margin: 0;
   height: 100vh;
   background-color: #AECABC;
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: 'Darker Grotesque', sans-serif;
 }
 
 section {
   height: 100vh;
 }
+
 section:nth-of-type(1) {
   background: #b7c9c1;
 }
@@ -23,25 +24,37 @@ section:nth-of-type(1) {
 
 section.middle {
   padding: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: calc(100vh - 16em);
 }
+
 section.middle > * {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 h2 {
   font-size: clamp(5rem, 5vw, 10rem);
   letter-spacing: -0.2rem;
   margin: 0;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .card {
   position: relative;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
+
 .card .box {
   background: #C3D7CD;
   position: absolute;
@@ -49,15 +62,17 @@ h2 {
   top: 4em;
   width: 200px;
   height: 13em;
-  border-radius: 0.3em;
+  border-radius: .3em;
   z-index: -1;
 }
+
 .card h3 {
   margin: 2.5em 0 0;
   font-size: clamp(2rem, 5vw, 2.5rem);
   font-weight: 400;
   line-height: 2rem;
 }
+
 .card p {
   width: 70%;
   font-size: clamp(0.85rem, 5vw, 1rem);
@@ -76,7 +91,9 @@ h2 {
 .card2 {
   margin-top: 10em;
 }
+
 .card2 .box {
   right: 0;
   left: 20%;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */

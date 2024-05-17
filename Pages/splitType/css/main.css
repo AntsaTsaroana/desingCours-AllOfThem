@@ -1,17 +1,19 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   margin: 0;
   height: 100vh;
-  font-family: "Darker Grotesque", sans-serif;
+  font-family: 'Darker Grotesque', sans-serif;
   background-color: #181818;
   color: white;
 }
 
 section {
   height: 100vh;
+  display: -ms-grid;
   display: grid;
   place-content: center;
 }
@@ -19,4 +21,5 @@ section {
 h1 {
   font-size: 4rem;
   visibility: hidden;
-}/*# sourceMappingURL=main.css.map */
+}
+/*# sourceMappingURL=main.css.map */
